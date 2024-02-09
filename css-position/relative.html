@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        .red {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            /* top: 0;
+            left: 0; */
+            /* Concept that needs to be considered in 3D: z-index */
+            /* z-index: 1; */
+        }
+        .blue {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            /* top: 20px;
+            left: 20px; */
+            top: 5px;
+            left: 5px;
+            /* z-index: 2; */
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="blue"></div>
+</body>
+</html>
